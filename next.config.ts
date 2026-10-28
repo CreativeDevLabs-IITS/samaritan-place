@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   output: "export",
   distDir: "dist",
   images: { unoptimized: true },
+  // Each page is written as page/index.html, so any static host (and the Nginx setup) can serve it.
+  trailingSlash: true,
 };
 
 export default nextConfig;
